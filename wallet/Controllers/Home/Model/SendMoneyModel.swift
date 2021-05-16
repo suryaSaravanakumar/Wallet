@@ -9,4 +9,5 @@ import Foundation
 
 struct sendMoney: Hashable {
     var userName: String
+    var id: Int
 }
