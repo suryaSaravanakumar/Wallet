@@ -15,6 +15,9 @@
 		D85CF8FA2650F03A002CC759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85CF8F82650F03A002CC759 /* LaunchScreen.storyboard */; };
 		D85CF9052650F03A002CC759 /* walletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF9042650F03A002CC759 /* walletTests.swift */; };
 		D85CF9102650F03A002CC759 /* walletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF90F2650F03A002CC759 /* walletUITests.swift */; };
+		D85CF92F2650F4A6002CC759 /* CurrentBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF92D2650F4A6002CC759 /* CurrentBalanceTableViewCell.swift */; };
+		D85CF9302650F4A6002CC759 /* CurrentBalanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85CF92E2650F4A6002CC759 /* CurrentBalanceTableViewCell.xib */; };
+		D85CF9372650F898002CC759 /* SendMoneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF9362650F898002CC759 /* SendMoneyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		D85CF90B2650F03A002CC759 /* walletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85CF90F2650F03A002CC759 /* walletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletUITests.swift; sourceTree = "<group>"; };
 		D85CF9112650F03A002CC759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85CF92D2650F4A6002CC759 /* CurrentBalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentBalanceTableViewCell.swift; sourceTree = "<group>"; };
+		D85CF92E2650F4A6002CC759 /* CurrentBalanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentBalanceTableViewCell.xib; sourceTree = "<group>"; };
+		D85CF9362650F898002CC759 /* SendMoneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,10 @@
 		D85CF8EC2650F03A002CC759 /* wallet */ = {
 			isa = PBXGroup;
 			children = (
-				D85CF8ED2650F03A002CC759 /* AppDelegate.swift */,
-				D85CF8EF2650F03A002CC759 /* SceneDelegate.swift */,
-				D85CF8F12650F03A002CC759 /* ViewController.swift */,
-				D85CF8F32650F03A002CC759 /* Main.storyboard */,
+				D85CF9212650F061002CC759 /* App Delegates */,
+				D85CF9202650F042002CC759 /* Controllers */,
+				D85CF9222650F07E002CC759 /* StoryBoard */,
 				D85CF8F62650F03A002CC759 /* Assets.xcassets */,
-				D85CF8F82650F03A002CC759 /* LaunchScreen.storyboard */,
 				D85CF8FB2650F03A002CC759 /* Info.plist */,
 			);
 			path = wallet;
@@ -126,6 +130,91 @@
 				D85CF9112650F03A002CC759 /* Info.plist */,
 			);
 			path = walletUITests;
+			sourceTree = "<group>";
+		};
+		D85CF9202650F042002CC759 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF9232650F0A8002CC759 /* Home */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D85CF9212650F061002CC759 /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF8ED2650F03A002CC759 /* AppDelegate.swift */,
+				D85CF8EF2650F03A002CC759 /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		D85CF9222650F07E002CC759 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF8F82650F03A002CC759 /* LaunchScreen.storyboard */,
+				D85CF8F32650F03A002CC759 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		D85CF9232650F0A8002CC759 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF9352650F7C6002CC759 /* Model */,
+				D85CF9252650F0B6002CC759 /* View */,
+				D85CF9262650F0BB002CC759 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D85CF9252650F0B6002CC759 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF92B2650F390002CC759 /* Table Cells */,
+				D85CF9272650F0D4002CC759 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D85CF9262650F0BB002CC759 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D85CF9272650F0D4002CC759 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF8F12650F03A002CC759 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D85CF92B2650F390002CC759 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF92C2650F39E002CC759 /* CurrentBalance */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		D85CF92C2650F39E002CC759 /* CurrentBalance */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF92D2650F4A6002CC759 /* CurrentBalanceTableViewCell.swift */,
+				D85CF92E2650F4A6002CC759 /* CurrentBalanceTableViewCell.xib */,
+			);
+			path = CurrentBalance;
+			sourceTree = "<group>";
+		};
+		D85CF9352650F7C6002CC759 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF9362650F898002CC759 /* SendMoneyModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85CF9302650F4A6002CC759 /* CurrentBalanceTableViewCell.xib in Resources */,
 				D85CF8FA2650F03A002CC759 /* LaunchScreen.storyboard in Resources */,
 				D85CF8F72650F03A002CC759 /* Assets.xcassets in Resources */,
 				D85CF8F52650F03A002CC759 /* Main.storyboard in Resources */,
@@ -258,8 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85CF92F2650F4A6002CC759 /* CurrentBalanceTableViewCell.swift in Sources */,
 				D85CF8F22650F03A002CC759 /* ViewController.swift in Sources */,
 				D85CF8EE2650F03A002CC759 /* AppDelegate.swift in Sources */,
+				D85CF9372650F898002CC759 /* SendMoneyModel.swift in Sources */,
 				D85CF8F02650F03A002CC759 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
