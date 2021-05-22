@@ -1,0 +1,40 @@
+{
+  "userName": "Surya Saravanakumar",
+  "userId": "1",
+  "currentBalance": 300000,
+  "friendsList": [
+    {
+      "name": "Archie",
+      "phone": "888-555-1212"
+    },
+    {
+      "name": "Jughead",
+      "phone": "888-555-1212"
+    },
+    {
+      "name": "Betty",
+      "phone": "888-555-1212"
+    },
+    {
+      "name": "veronica",
+      "phone": "888-555-1212"
+    }
+  ],
+  "mySpend": [
+    {
+      "title": "Movie Ticket",
+      "amount": "1200",
+      "time": "2021-05-01T00:00:00.000Z"
+    },
+    {
+      "title": "Electricity Bill",
+      "amount": "300",
+      "time": "2021-05-04T00:00:00.000Z"
+    },
+    {
+      "title": "Food and drinks",
+      "amount": "1000",
+      "time": "2021-04-30T00:00:00.000Z"
+    }
+  ]
+}

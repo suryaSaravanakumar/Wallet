@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8403BE92657DD0B0078DF91 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8403BE82657DD0B0078DF91 /* Lato-Black.ttf */; };
+		D8403BEE2657DD130078DF91 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8403BED2657DD130078DF91 /* Lato-Bold.ttf */; };
+		D8403BF32657DD1C0078DF91 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8403BF22657DD1C0078DF91 /* Lato-Light.ttf */; };
+		D8403BF82657DD250078DF91 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8403BF72657DD250078DF91 /* Lato-Regular.ttf */; };
+		D8403C002657E7200078DF91 /* Wallet.json in Resources */ = {isa = PBXBuildFile; fileRef = D8403BFF2657E7200078DF91 /* Wallet.json */; };
+		D8403C052657E7590078DF91 /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C042657E7590078DF91 /* JsonReader.swift */; };
+		D8403C152657F9140078DF91 /* MySpendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C132657F9140078DF91 /* MySpendsTableViewCell.swift */; };
+		D8403C162657F9140078DF91 /* MySpendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8403C142657F9140078DF91 /* MySpendsTableViewCell.xib */; };
+		D8403C2C2657FA700078DF91 /* FriendsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C2A2657FA700078DF91 /* FriendsListCollectionViewCell.swift */; };
+		D8403C2D2657FA700078DF91 /* FriendsListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8403C2B2657FA700078DF91 /* FriendsListCollectionViewCell.xib */; };
+		D8403C39265817220078DF91 /* AddFriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C37265817220078DF91 /* AddFriendCollectionViewCell.swift */; };
+		D8403C3A265817220078DF91 /* AddFriendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8403C38265817220078DF91 /* AddFriendCollectionViewCell.xib */; };
 		D85CF8EE2650F03A002CC759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8ED2650F03A002CC759 /* AppDelegate.swift */; };
 		D85CF8F02650F03A002CC759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8EF2650F03A002CC759 /* SceneDelegate.swift */; };
 		D85CF8F22650F03A002CC759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8F12650F03A002CC759 /* ViewController.swift */; };
@@ -38,6 +50,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8403BE82657DD0B0078DF91 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		D8403BED2657DD130078DF91 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		D8403BF22657DD1C0078DF91 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		D8403BF72657DD250078DF91 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		D8403BFF2657E7200078DF91 /* Wallet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Wallet.json; sourceTree = "<group>"; };
+		D8403C042657E7590078DF91 /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
+		D8403C132657F9140078DF91 /* MySpendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpendsTableViewCell.swift; sourceTree = "<group>"; };
+		D8403C142657F9140078DF91 /* MySpendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySpendsTableViewCell.xib; sourceTree = "<group>"; };
+		D8403C2A2657FA700078DF91 /* FriendsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8403C2B2657FA700078DF91 /* FriendsListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8403C37265817220078DF91 /* AddFriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8403C38265817220078DF91 /* AddFriendCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFriendCollectionViewCell.xib; sourceTree = "<group>"; };
 		D85CF8EA2650F03A002CC759 /* wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85CF8ED2650F03A002CC759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D85CF8EF2650F03A002CC759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +106,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8403BE62657DCE60078DF91 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D8403BFE2657E7110078DF91 /* Data */,
+				D8403BE72657DCF20078DF91 /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D8403BE72657DCF20078DF91 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8403BF72657DD250078DF91 /* Lato-Regular.ttf */,
+				D8403BF22657DD1C0078DF91 /* Lato-Light.ttf */,
+				D8403BED2657DD130078DF91 /* Lato-Bold.ttf */,
+				D8403BE82657DD0B0078DF91 /* Lato-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D8403BFC2657E6740078DF91 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D8403BFD2657E6810078DF91 /* Netowork */,
+				D8403C042657E7590078DF91 /* JsonReader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D8403BFD2657E6810078DF91 /* Netowork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Netowork;
+			sourceTree = "<group>";
+		};
+		D8403BFE2657E7110078DF91 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D8403BFF2657E7200078DF91 /* Wallet.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D8403C122657F8540078DF91 /* MySpendCell */ = {
+			isa = PBXGroup;
+			children = (
+				D8403C132657F9140078DF91 /* MySpendsTableViewCell.swift */,
+				D8403C142657F9140078DF91 /* MySpendsTableViewCell.xib */,
+			);
+			path = MySpendCell;
+			sourceTree = "<group>";
+		};
+		D8403C1A2657FA2A0078DF91 /* Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D8403C292657FA590078DF91 /* FreindsListCell */,
+				D8403C252657FA4B0078DF91 /* Add Friend Cell */,
+			);
+			path = "Collection Cell";
+			sourceTree = "<group>";
+		};
+		D8403C252657FA4B0078DF91 /* Add Friend Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D8403C37265817220078DF91 /* AddFriendCollectionViewCell.swift */,
+				D8403C38265817220078DF91 /* AddFriendCollectionViewCell.xib */,
+			);
+			path = "Add Friend Cell";
+			sourceTree = "<group>";
+		};
+		D8403C292657FA590078DF91 /* FreindsListCell */ = {
+			isa = PBXGroup;
+			children = (
+				D8403C2A2657FA700078DF91 /* FriendsListCollectionViewCell.swift */,
+				D8403C2B2657FA700078DF91 /* FriendsListCollectionViewCell.xib */,
+			);
+			path = FreindsListCell;
+			sourceTree = "<group>";
+		};
 		D85CF8E12650F03A002CC759 = {
 			isa = PBXGroup;
 			children = (
@@ -106,8 +210,10 @@
 			isa = PBXGroup;
 			children = (
 				D85CF9212650F061002CC759 /* App Delegates */,
+				D8403BFC2657E6740078DF91 /* Helpers */,
 				D85CF9202650F042002CC759 /* Controllers */,
 				D85CF9222650F07E002CC759 /* StoryBoard */,
+				D8403BE62657DCE60078DF91 /* Resource */,
 				D85CF8F62650F03A002CC759 /* Assets.xcassets */,
 				D85CF8FB2650F03A002CC759 /* Info.plist */,
 			);
@@ -171,6 +277,7 @@
 		D85CF9252650F0B6002CC759 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D8403C1A2657FA2A0078DF91 /* Collection Cell */,
 				D85CF92B2650F390002CC759 /* Table Cells */,
 				D85CF9272650F0D4002CC759 /* Controller */,
 			);
@@ -195,6 +302,7 @@
 		D85CF92B2650F390002CC759 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D8403C122657F8540078DF91 /* MySpendCell */,
 				D85CF92C2650F39E002CC759 /* CurrentBalance */,
 			);
 			path = "Table Cells";
@@ -320,10 +428,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8403C162657F9140078DF91 /* MySpendsTableViewCell.xib in Resources */,
 				D85CF9302650F4A6002CC759 /* CurrentBalanceTableViewCell.xib in Resources */,
+				D8403BEE2657DD130078DF91 /* Lato-Bold.ttf in Resources */,
+				D8403C2D2657FA700078DF91 /* FriendsListCollectionViewCell.xib in Resources */,
 				D85CF8FA2650F03A002CC759 /* LaunchScreen.storyboard in Resources */,
+				D8403BF82657DD250078DF91 /* Lato-Regular.ttf in Resources */,
+				D8403C002657E7200078DF91 /* Wallet.json in Resources */,
 				D85CF8F72650F03A002CC759 /* Assets.xcassets in Resources */,
+				D8403C3A265817220078DF91 /* AddFriendCollectionViewCell.xib in Resources */,
+				D8403BE92657DD0B0078DF91 /* Lato-Black.ttf in Resources */,
 				D85CF8F52650F03A002CC759 /* Main.storyboard in Resources */,
+				D8403BF32657DD1C0078DF91 /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,9 +466,13 @@
 			files = (
 				D85CF92F2650F4A6002CC759 /* CurrentBalanceTableViewCell.swift in Sources */,
 				D85CF8F22650F03A002CC759 /* ViewController.swift in Sources */,
+				D8403C152657F9140078DF91 /* MySpendsTableViewCell.swift in Sources */,
 				D85CF8EE2650F03A002CC759 /* AppDelegate.swift in Sources */,
 				D85CF9372650F898002CC759 /* SendMoneyModel.swift in Sources */,
+				D8403C052657E7590078DF91 /* JsonReader.swift in Sources */,
 				D85CF8F02650F03A002CC759 /* SceneDelegate.swift in Sources */,
+				D8403C39265817220078DF91 /* AddFriendCollectionViewCell.swift in Sources */,
+				D8403C2C2657FA700078DF91 /* FriendsListCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import UIKit
 class CurrentBalanceTableViewCell: UITableViewCell {
     
     //MARK: IBOutlet Declaration
-    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var currentBalance: UILabel!
     
     //MARK: Property Declaration
     static var CurrentBalanceCell_ID = "CurrentBalanceTableViewCell"
@@ -20,6 +20,7 @@ class CurrentBalanceTableViewCell: UITableViewCell {
         self.selectionStyle = .none
     }
 
+    
     
     
 }
