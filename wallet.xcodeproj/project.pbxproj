@@ -19,6 +19,7 @@
 		D8403C2D2657FA700078DF91 /* FriendsListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8403C2B2657FA700078DF91 /* FriendsListCollectionViewCell.xib */; };
 		D8403C39265817220078DF91 /* AddFriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C37265817220078DF91 /* AddFriendCollectionViewCell.swift */; };
 		D8403C3A265817220078DF91 /* AddFriendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8403C38265817220078DF91 /* AddFriendCollectionViewCell.xib */; };
+		D8403C60265A2D1D0078DF91 /* MySpendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C5F265A2D1D0078DF91 /* MySpendsViewController.swift */; };
 		D85CF8EE2650F03A002CC759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8ED2650F03A002CC759 /* AppDelegate.swift */; };
 		D85CF8F02650F03A002CC759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8EF2650F03A002CC759 /* SceneDelegate.swift */; };
 		D85CF8F22650F03A002CC759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8F12650F03A002CC759 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		D8403C2B2657FA700078DF91 /* FriendsListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsListCollectionViewCell.xib; sourceTree = "<group>"; };
 		D8403C37265817220078DF91 /* AddFriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8403C38265817220078DF91 /* AddFriendCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFriendCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8403C5F265A2D1D0078DF91 /* MySpendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpendsViewController.swift; sourceTree = "<group>"; };
 		D85CF8EA2650F03A002CC759 /* wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85CF8ED2650F03A002CC759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D85CF8EF2650F03A002CC759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,14 @@
 			path = FreindsListCell;
 			sourceTree = "<group>";
 		};
+		D8403C5B265A2CFF0078DF91 /* My Spends */ = {
+			isa = PBXGroup;
+			children = (
+				D8403C5F265A2D1D0078DF91 /* MySpendsViewController.swift */,
+			);
+			path = "My Spends";
+			sourceTree = "<group>";
+		};
 		D85CF8E12650F03A002CC759 = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +251,7 @@
 		D85CF9202650F042002CC759 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D8403C5B265A2CFF0078DF91 /* My Spends */,
 				D85CF9232650F0A8002CC759 /* Home */,
 			);
 			path = Controllers;
@@ -467,6 +478,7 @@
 				D85CF92F2650F4A6002CC759 /* CurrentBalanceTableViewCell.swift in Sources */,
 				D85CF8F22650F03A002CC759 /* ViewController.swift in Sources */,
 				D8403C152657F9140078DF91 /* MySpendsTableViewCell.swift in Sources */,
+				D8403C60265A2D1D0078DF91 /* MySpendsViewController.swift in Sources */,
 				D85CF8EE2650F03A002CC759 /* AppDelegate.swift in Sources */,
 				D85CF9372650F898002CC759 /* SendMoneyModel.swift in Sources */,
 				D8403C052657E7590078DF91 /* JsonReader.swift in Sources */,

@@ -12,8 +12,8 @@ class HomeViewController: UIViewController {
     //MARK:- Property  Declaration
     //Step - 1
     private var dataSource: UITableViewDiffableDataSource<sections,AnyHashable>!
-    private var collectionViewdataSource: UICollectionViewDiffableDataSource<String,MySpend>!
-    private var walletDetails:[WalletModel] = []
+   
+    private var walletDetails:WalletModel?
     
     enum sections{
         case sendMoney
@@ -48,7 +48,7 @@ class HomeViewController: UIViewController {
     
     private func prepareData() {
         guard let walletData = readLocalFileAndParseData() else {return}
-        walletDetails.append(walletData)// = walletData
+        walletDetails = walletData //.append(walletData)
     }
     //Step - 2
     private func configuareTableViewDataSource(){
@@ -57,24 +57,16 @@ class HomeViewController: UIViewController {
             switch indexpath.section {
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: CurrentBalanceTableViewCell.CurrentBalanceCell_ID, for: indexpath) as? CurrentBalanceTableViewCell
+                cell?.selectionStyle = .none
                 if let wallet = walletDetails as? [WalletModel]{
                     cell?.currentBalance.text = "₹ \(wallet.first?.currentBalance)"
                 }
                 return cell
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: MySpendsTableViewCell.MySpendsTableViewCell_ID, for: indexpath) as? MySpendsTableViewCell
-                if let collectionView =  cell?.collectionView{
-                    collectionView.delegate = self
-                    
-                    //Register cell
-//                    collectionView.register(UINib(nibName: MySpendsTableViewCell.MySpendsTableViewCell_ID, bundle: nil), forCellWithReuseIdentifier: MySpendsTableViewCell.MySpendsTableViewCell_ID)
-                    collectionView.register(UINib(nibName: AddFriendCollectionViewCell.AddFriendCollectionViewCell_ID, bundle: nil), forCellWithReuseIdentifier: AddFriendCollectionViewCell.AddFriendCollectionViewCell_ID)
-                    
-                    //Setup data source
-                    self.configureCollectionViewDataSource(collectionView: collectionView)
-                    self.applyCollectionViewSnapshot()
-                    
-                }
+                cell?.selectionStyle = .none
+                cell?.mySpendDetails = self.walletDetails?.mySpend
+                cell?.collectionViewSetup()
                 return cell
             default:
                 return UITableViewCell()
@@ -88,9 +80,8 @@ class HomeViewController: UIViewController {
         var snapShot = NSDiffableDataSourceSnapshot<sections,AnyHashable>()
         
         snapShot.appendSections([.myBalance,.sendMoney])
-//        print(snapShot.numberOfSections)
-        snapShot.appendItems(walletDetails, toSection: .myBalance)
-        snapShot.appendItems(walletDetails[0].mySpend, toSection: .sendMoney)
+        snapShot.appendItems([walletDetails?.currentBalance], toSection: .myBalance)
+        snapShot.appendItems([walletDetails!], toSection: .sendMoney)
         dataSource.apply(snapShot, animatingDifferences: true)
     }
     
@@ -98,9 +89,9 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate{
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 140
+//    }
 //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 //
 //        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 68))
@@ -118,32 +109,10 @@ extension HomeViewController: UITableViewDelegate{
 //    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
 //        return 68
 //    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 
-extension HomeViewController: UICollectionViewDelegate{
-    
-    func configureCollectionViewDataSource(collectionView: UICollectionView){
-        collectionViewdataSource = UICollectionViewDiffableDataSource<String,MySpend>(collectionView: collectionView, cellProvider: { (collectionView, indexpath, mySpend) -> UICollectionViewCell? in
-            switch indexpath.row {
-            case 0:
-                let collectionView = collectionView.dequeueReusableCell(withReuseIdentifier: AddFriendCollectionViewCell.AddFriendCollectionViewCell_ID, for: indexpath) as? AddFriendCollectionViewCell
-                return collectionView
-            default:
-                let collectionView = collectionView.dequeueReusableCell(withReuseIdentifier: AddFriendCollectionViewCell.AddFriendCollectionViewCell_ID, for: indexpath) as? AddFriendCollectionViewCell
-                return collectionView
-            }
-           
-            
-        })
-    }
-    
-    func applyCollectionViewSnapshot(){
-        var snapShot = NSDiffableDataSourceSnapshot<String,MySpend>()
-        snapShot.appendSections(["0"])
-        snapShot.appendItems(walletDetails[0].mySpend)
-        collectionViewdataSource.apply(snapShot, animatingDifferences: true)
-            
-    }
-    
-}
+
 

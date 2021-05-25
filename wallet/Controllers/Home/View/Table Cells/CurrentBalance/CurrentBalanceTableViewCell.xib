@@ -53,19 +53,19 @@
                                         <rect key="frame" x="239" y="26" width="50" height="50"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHf-Cx-Qwn">
-                                                <rect key="frame" x="5" y="8.5" width="40" height="33"/>
+                                                <rect key="frame" x="10" y="13.5" width="30" height="23"/>
                                                 <color key="tintColor" name="primary"/>
                                                 <imageReference key="image" image="plus" catalog="system" symbolScale="small"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" name="secondry"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="dHf-Cx-Qwn" secondAttribute="bottom" constant="5" id="9Rp-fX-Ibe"/>
+                                            <constraint firstAttribute="bottom" secondItem="dHf-Cx-Qwn" secondAttribute="bottom" constant="10" id="9Rp-fX-Ibe"/>
                                             <constraint firstAttribute="height" constant="50" id="EXV-nl-SUc"/>
                                             <constraint firstAttribute="width" constant="50" id="K13-TL-RxN"/>
-                                            <constraint firstItem="dHf-Cx-Qwn" firstAttribute="top" secondItem="Fa2-gB-ybZ" secondAttribute="top" constant="5" id="PRC-Ko-FTd"/>
-                                            <constraint firstItem="dHf-Cx-Qwn" firstAttribute="leading" secondItem="Fa2-gB-ybZ" secondAttribute="leading" constant="5" id="ShM-f8-9aW"/>
-                                            <constraint firstAttribute="trailing" secondItem="dHf-Cx-Qwn" secondAttribute="trailing" constant="5" id="reh-bV-ogG"/>
+                                            <constraint firstItem="dHf-Cx-Qwn" firstAttribute="top" secondItem="Fa2-gB-ybZ" secondAttribute="top" constant="10" id="PRC-Ko-FTd"/>
+                                            <constraint firstItem="dHf-Cx-Qwn" firstAttribute="leading" secondItem="Fa2-gB-ybZ" secondAttribute="leading" constant="10" id="ShM-f8-9aW"/>
+                                            <constraint firstAttribute="trailing" secondItem="dHf-Cx-Qwn" secondAttribute="trailing" constant="10" id="reh-bV-ogG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -100,6 +100,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="addHolderView" destination="Fa2-gB-ybZ" id="Frx-UE-rtp"/>
                 <outlet property="currentBalance" destination="3C2-lt-Cfr" id="alW-vd-Jvr"/>
             </connections>
             <point key="canvasLocation" x="-71.014492753623188" y="-49.553571428571423"/>
@@ -109,13 +110,13 @@
         <image name="card" width="352" height="104"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="primary">
-            <color red="0.082352941176470587" green="0.396078431372549" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.082000002264976501" green="0.39599999785423279" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="secondry">
-            <color red="1" green="0.80000000000000004" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.80000001192092896" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="walletBlack">
-            <color red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

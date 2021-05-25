@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -25,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rIe-iD-ipZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rIe-iD-ipZ">
                                 <rect key="frame" x="0.0" y="124" width="414" height="772"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -83,14 +84,72 @@
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="75"/>
         </scene>
+        <!--My Spends View Controller-->
+        <scene sceneID="8hq-V3-I1u">
+            <objects>
+                <viewController storyboardIdentifier="MySpendsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bnE-Zp-Y3w" customClass="MySpendsViewController" customModule="wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qJV-lG-Bc2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBv-1D-z2b">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZiQ-Sx-sRT">
+                                        <rect key="frame" x="0.0" y="52" width="414" height="844"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8qN-39-BJd">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jCR-QK-bjk">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6gG-IR-SmH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZiQ-Sx-sRT" secondAttribute="bottom" id="R6a-Qc-vWD"/>
+                                    <constraint firstItem="ZiQ-Sx-sRT" firstAttribute="leading" secondItem="UBv-1D-z2b" secondAttribute="leading" id="Uuq-Ef-Dhu"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZiQ-Sx-sRT" secondAttribute="trailing" id="WRr-UH-I7N"/>
+                                    <constraint firstItem="ZiQ-Sx-sRT" firstAttribute="top" secondItem="UBv-1D-z2b" secondAttribute="top" constant="52" id="bwR-aY-jvd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bng-q6-TZf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UBv-1D-z2b" secondAttribute="bottom" id="C3O-dU-7Jl"/>
+                            <constraint firstItem="UBv-1D-z2b" firstAttribute="leading" secondItem="bng-q6-TZf" secondAttribute="leading" id="Id6-gt-ZBo"/>
+                            <constraint firstItem="UBv-1D-z2b" firstAttribute="trailing" secondItem="bng-q6-TZf" secondAttribute="trailing" id="XZq-l3-ePO"/>
+                            <constraint firstItem="UBv-1D-z2b" firstAttribute="top" secondItem="qJV-lG-Bc2" secondAttribute="top" id="bxO-uR-fgh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ZiQ-Sx-sRT" id="t9a-Kq-nzR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQa-2C-B3n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601.44927536231887" y="75"/>
+        </scene>
     </scenes>
     <resources>
         <image name="avatar01" width="50" height="50"/>
         <namedColor name="primary">
-            <color red="0.082352941176470587" green="0.396078431372549" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.082000002264976501" green="0.39599999785423279" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="walletBlack">
-            <color red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
