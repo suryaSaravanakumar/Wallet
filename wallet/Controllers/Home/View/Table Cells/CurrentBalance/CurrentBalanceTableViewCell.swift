@@ -26,6 +26,9 @@ class CurrentBalanceTableViewCell: UITableViewCell {
         addHolderView.layer.shadowOffset = CGSize(width: 0, height: 2)
         addHolderView.layer.shadowRadius = 4
         addHolderView.layer.shadowOpacity = 0.2
+        
+        
+        
     }
 
     
