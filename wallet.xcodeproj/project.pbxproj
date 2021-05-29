@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80678AC2662269900206FCC /* MySpendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80678AA2662269900206FCC /* MySpendsTableViewCell.swift */; };
+		D80678AD2662269900206FCC /* MySpendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80678AB2662269900206FCC /* MySpendsTableViewCell.xib */; };
 		D8403BE92657DD0B0078DF91 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8403BE82657DD0B0078DF91 /* Lato-Black.ttf */; };
 		D8403BEE2657DD130078DF91 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8403BED2657DD130078DF91 /* Lato-Bold.ttf */; };
 		D8403BF32657DD1C0078DF91 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8403BF22657DD1C0078DF91 /* Lato-Light.ttf */; };
 		D8403BF82657DD250078DF91 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8403BF72657DD250078DF91 /* Lato-Regular.ttf */; };
 		D8403C002657E7200078DF91 /* Wallet.json in Resources */ = {isa = PBXBuildFile; fileRef = D8403BFF2657E7200078DF91 /* Wallet.json */; };
 		D8403C052657E7590078DF91 /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C042657E7590078DF91 /* JsonReader.swift */; };
-		D8403C152657F9140078DF91 /* MySpendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C132657F9140078DF91 /* MySpendsTableViewCell.swift */; };
-		D8403C162657F9140078DF91 /* MySpendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8403C142657F9140078DF91 /* MySpendsTableViewCell.xib */; };
+		D8403C152657F9140078DF91 /* SendMoneyTabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C132657F9140078DF91 /* SendMoneyTabelCell.swift */; };
+		D8403C162657F9140078DF91 /* SendMoneyTabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8403C142657F9140078DF91 /* SendMoneyTabelCell.xib */; };
 		D8403C2C2657FA700078DF91 /* FriendsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C2A2657FA700078DF91 /* FriendsListCollectionViewCell.swift */; };
 		D8403C2D2657FA700078DF91 /* FriendsListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8403C2B2657FA700078DF91 /* FriendsListCollectionViewCell.xib */; };
 		D8403C39265817220078DF91 /* AddFriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C37265817220078DF91 /* AddFriendCollectionViewCell.swift */; };
@@ -51,14 +53,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D80678AA2662269900206FCC /* MySpendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpendsTableViewCell.swift; sourceTree = "<group>"; };
+		D80678AB2662269900206FCC /* MySpendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySpendsTableViewCell.xib; sourceTree = "<group>"; };
 		D8403BE82657DD0B0078DF91 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		D8403BED2657DD130078DF91 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		D8403BF22657DD1C0078DF91 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
 		D8403BF72657DD250078DF91 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		D8403BFF2657E7200078DF91 /* Wallet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Wallet.json; sourceTree = "<group>"; };
 		D8403C042657E7590078DF91 /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
-		D8403C132657F9140078DF91 /* MySpendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpendsTableViewCell.swift; sourceTree = "<group>"; };
-		D8403C142657F9140078DF91 /* MySpendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySpendsTableViewCell.xib; sourceTree = "<group>"; };
+		D8403C132657F9140078DF91 /* SendMoneyTabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyTabelCell.swift; sourceTree = "<group>"; };
+		D8403C142657F9140078DF91 /* SendMoneyTabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendMoneyTabelCell.xib; sourceTree = "<group>"; };
 		D8403C2A2657FA700078DF91 /* FriendsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8403C2B2657FA700078DF91 /* FriendsListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsListCollectionViewCell.xib; sourceTree = "<group>"; };
 		D8403C37265817220078DF91 /* AddFriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -108,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D806789A2662258100206FCC /* My Spends cell */ = {
+			isa = PBXGroup;
+			children = (
+				D80678AA2662269900206FCC /* MySpendsTableViewCell.swift */,
+				D80678AB2662269900206FCC /* MySpendsTableViewCell.xib */,
+			);
+			path = "My Spends cell";
+			sourceTree = "<group>";
+		};
 		D8403BE62657DCE60078DF91 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,13 +165,13 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		D8403C122657F8540078DF91 /* MySpendCell */ = {
+		D8403C122657F8540078DF91 /* SendMoney Cell */ = {
 			isa = PBXGroup;
 			children = (
-				D8403C132657F9140078DF91 /* MySpendsTableViewCell.swift */,
-				D8403C142657F9140078DF91 /* MySpendsTableViewCell.xib */,
+				D8403C132657F9140078DF91 /* SendMoneyTabelCell.swift */,
+				D8403C142657F9140078DF91 /* SendMoneyTabelCell.xib */,
 			);
-			path = MySpendCell;
+			path = "SendMoney Cell";
 			sourceTree = "<group>";
 		};
 		D8403C1A2657FA2A0078DF91 /* Collection Cell */ = {
@@ -313,7 +326,8 @@
 		D85CF92B2650F390002CC759 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D8403C122657F8540078DF91 /* MySpendCell */,
+				D806789A2662258100206FCC /* My Spends cell */,
+				D8403C122657F8540078DF91 /* SendMoney Cell */,
 				D85CF92C2650F39E002CC759 /* CurrentBalance */,
 			);
 			path = "Table Cells";
@@ -439,7 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8403C162657F9140078DF91 /* MySpendsTableViewCell.xib in Resources */,
+				D8403C162657F9140078DF91 /* SendMoneyTabelCell.xib in Resources */,
 				D85CF9302650F4A6002CC759 /* CurrentBalanceTableViewCell.xib in Resources */,
 				D8403BEE2657DD130078DF91 /* Lato-Bold.ttf in Resources */,
 				D8403C2D2657FA700078DF91 /* FriendsListCollectionViewCell.xib in Resources */,
@@ -450,6 +464,7 @@
 				D8403C3A265817220078DF91 /* AddFriendCollectionViewCell.xib in Resources */,
 				D8403BE92657DD0B0078DF91 /* Lato-Black.ttf in Resources */,
 				D85CF8F52650F03A002CC759 /* Main.storyboard in Resources */,
+				D80678AD2662269900206FCC /* MySpendsTableViewCell.xib in Resources */,
 				D8403BF32657DD1C0078DF91 /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,13 +492,14 @@
 			files = (
 				D85CF92F2650F4A6002CC759 /* CurrentBalanceTableViewCell.swift in Sources */,
 				D85CF8F22650F03A002CC759 /* ViewController.swift in Sources */,
-				D8403C152657F9140078DF91 /* MySpendsTableViewCell.swift in Sources */,
+				D8403C152657F9140078DF91 /* SendMoneyTabelCell.swift in Sources */,
 				D8403C60265A2D1D0078DF91 /* MySpendsViewController.swift in Sources */,
 				D85CF8EE2650F03A002CC759 /* AppDelegate.swift in Sources */,
 				D85CF9372650F898002CC759 /* SendMoneyModel.swift in Sources */,
 				D8403C052657E7590078DF91 /* JsonReader.swift in Sources */,
 				D85CF8F02650F03A002CC759 /* SceneDelegate.swift in Sources */,
 				D8403C39265817220078DF91 /* AddFriendCollectionViewCell.swift in Sources */,
+				D80678AC2662269900206FCC /* MySpendsTableViewCell.swift in Sources */,
 				D8403C2C2657FA700078DF91 /* FriendsListCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

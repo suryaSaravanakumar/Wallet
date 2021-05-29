@@ -7,13 +7,13 @@
 
 import UIKit
 
-class MySpendsTableViewCell: UITableViewCell {
+class SendMoneyTabelCell: UITableViewCell {
 
     @IBOutlet weak var addImageHolderView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     //MARK: Property Declaration
-    static var MySpendsTableViewCell_ID = "MySpendsTableViewCell"
+    static var SendMoneyTabelCell_ID = "SendMoneyTabelCell"
     private var collectionViewdataSource: UICollectionViewDiffableDataSource<String,MySpend>!
     var mySpendDetails: [MySpend]?
     
@@ -58,7 +58,7 @@ class MySpendsTableViewCell: UITableViewCell {
     
 }
 
-extension MySpendsTableViewCell: UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
+extension SendMoneyTabelCell: UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {

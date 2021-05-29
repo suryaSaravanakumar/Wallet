@@ -41,6 +41,7 @@ class HomeViewController: UIViewController {
         self.tableView.estimatedRowHeight = 250
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.register(UINib(nibName: CurrentBalanceTableViewCell.CurrentBalanceCell_ID, bundle: nil), forCellReuseIdentifier: CurrentBalanceTableViewCell.CurrentBalanceCell_ID)
+        self.tableView.register(UINib(nibName: SendMoneyTabelCell.SendMoneyTabelCell_ID, bundle: nil), forCellReuseIdentifier: SendMoneyTabelCell.SendMoneyTabelCell_ID)
         self.tableView.register(UINib(nibName: MySpendsTableViewCell.MySpendsTableViewCell_ID, bundle: nil), forCellReuseIdentifier: MySpendsTableViewCell.MySpendsTableViewCell_ID)
         
         configuareTableViewDataSource()
@@ -50,6 +51,7 @@ class HomeViewController: UIViewController {
         guard let walletData = readLocalFileAndParseData() else {return}
         walletDetails = walletData //.append(walletData)
     }
+    
     //Step - 2
     private func configuareTableViewDataSource(){
         dataSource = UITableViewDiffableDataSource<sections,AnyHashable>(tableView: tableView, cellProvider: { (tableView, indexpath, walletDetails) -> UITableViewCell? in
@@ -63,7 +65,7 @@ class HomeViewController: UIViewController {
                 }
                 return cell
             case 1:
-                let cell = tableView.dequeueReusableCell(withIdentifier: MySpendsTableViewCell.MySpendsTableViewCell_ID, for: indexpath) as? MySpendsTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: SendMoneyTabelCell.SendMoneyTabelCell_ID, for: indexpath) as? SendMoneyTabelCell
                 cell?.selectionStyle = .none
                 cell?.mySpendDetails = self.walletDetails?.mySpend
                 cell?.collectionViewSetup()
