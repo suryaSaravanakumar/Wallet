@@ -13,17 +13,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SendMoneyTabelCell" customModule="wallet" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FsT-0B-2q1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Nqj-fB-Dva">
-                                <rect key="frame" x="92" y="10" width="220" height="140"/>
+                                <rect key="frame" x="92" y="0.0" width="220" height="140"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iNN-Ax-X3o">
                                     <size key="itemSize" width="128" height="128"/>
@@ -33,7 +33,7 @@
                                 </collectionViewFlowLayout>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9it-3F-K8z">
-                                <rect key="frame" x="10" y="10" width="80" height="140"/>
+                                <rect key="frame" x="10" y="0.0" width="80" height="140"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHw-Kp-p7W">
                                         <rect key="frame" x="15" y="45" width="50" height="50"/>
@@ -72,10 +72,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="160" id="85v-RV-75i"/>
+                            <constraint firstAttribute="height" constant="140" id="85v-RV-75i"/>
                             <constraint firstItem="9it-3F-K8z" firstAttribute="bottom" secondItem="Nqj-fB-Dva" secondAttribute="bottom" id="9ZP-uT-MES"/>
-                            <constraint firstItem="Nqj-fB-Dva" firstAttribute="top" secondItem="FsT-0B-2q1" secondAttribute="top" constant="10" id="BPb-Kg-ZNM"/>
-                            <constraint firstAttribute="bottom" secondItem="Nqj-fB-Dva" secondAttribute="bottom" constant="10" id="WAb-fo-509"/>
+                            <constraint firstItem="Nqj-fB-Dva" firstAttribute="top" secondItem="FsT-0B-2q1" secondAttribute="top" id="BPb-Kg-ZNM"/>
+                            <constraint firstAttribute="bottom" secondItem="Nqj-fB-Dva" secondAttribute="bottom" id="WAb-fo-509"/>
                             <constraint firstItem="9it-3F-K8z" firstAttribute="top" secondItem="Nqj-fB-Dva" secondAttribute="top" id="brM-83-KZh"/>
                             <constraint firstAttribute="trailing" secondItem="Nqj-fB-Dva" secondAttribute="trailing" constant="8" id="nIM-le-Z2y"/>
                             <constraint firstItem="9it-3F-K8z" firstAttribute="leading" secondItem="FsT-0B-2q1" secondAttribute="leading" constant="10" id="nhQ-ym-xe7"/>

@@ -15,6 +15,7 @@ class FriendsListCollectionViewCell: UICollectionViewCell {
     
     //MARK: Property Declaration
     static var FriendsListCollectionViewCell_ID = "FriendsListCollectionViewCell"
+    var friendDetails: FriendsList?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,11 +24,17 @@ class FriendsListCollectionViewCell: UICollectionViewCell {
         self.setShadow()
     }
     
-    func setShadow() {
+    private func setShadow() {
         self.holderView.layer.shadowColor = UIColor.label.cgColor
         self.holderView.layer.shadowOffset = CGSize(width: 1, height: 2)
         self.holderView.layer.shadowRadius = 4
         self.holderView.layer.shadowOpacity = 0.2
+    }
+    
+    func updateCollectionCell(){
+        guard let details = friendDetails else {  return }
+        nameLbl.text = details.name
+        profileImageView.image = UIImage(named: details.profilePic)
     }
 
 }

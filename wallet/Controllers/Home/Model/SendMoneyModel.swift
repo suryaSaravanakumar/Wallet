@@ -24,7 +24,7 @@ struct WalletModel: Codable,Hashable {
 
 // MARK: - FriendsList
 struct FriendsList: Codable,Hashable {
-    let name, phone: String
+    let name, phone,profilePic: String
 }
 
 // MARK: - MySpend

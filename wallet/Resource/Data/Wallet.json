@@ -5,19 +5,23 @@
   "friendsList": [
     {
       "name": "Archie",
-      "phone": "888-555-1212"
+      "phone": "888-555-1212",
+      "profilePic" : "avatar01"
     },
     {
       "name": "Jughead",
-      "phone": "888-555-1212"
+      "phone": "888-555-1212",
+      "profilePic" : "avatar02"
     },
     {
       "name": "Betty",
-      "phone": "888-555-1212"
+      "phone": "888-555-1212",
+      "profilePic" : "avatar03"
     },
     {
       "name": "veronica",
-      "phone": "888-555-1212"
+      "phone": "888-555-1212",
+      "profilePic" : "avatar04"
     }
   ],
   "mySpend": [

@@ -7,6 +7,8 @@
 
 import UIKit
 
+fileprivate typealias collectionDiffableDataSource = UICollectionViewDiffableDataSource<String,FriendsList>
+
 class SendMoneyTabelCell: UITableViewCell {
 
     @IBOutlet weak var addImageHolderView: UIView!
@@ -14,8 +16,8 @@ class SendMoneyTabelCell: UITableViewCell {
     
     //MARK: Property Declaration
     static var SendMoneyTabelCell_ID = "SendMoneyTabelCell"
-    private var collectionViewdataSource: UICollectionViewDiffableDataSource<String,MySpend>!
-    var mySpendDetails: [MySpend]?
+    private var collectionViewdataSource: collectionDiffableDataSource!
+    var friendsDetails: [FriendsList]?
     
     override  func awakeFromNib() {
         super.awakeFromNib()
@@ -41,17 +43,21 @@ class SendMoneyTabelCell: UITableViewCell {
     }
     
     func configureCollectionViewDataSource(collectionView: UICollectionView){
-        collectionViewdataSource = UICollectionViewDiffableDataSource<String,MySpend>(collectionView: collectionView, cellProvider: { (collectionView, indexpath, mySpend) -> UICollectionViewCell? in
-            let collectionView = collectionView.dequeueReusableCell(withReuseIdentifier: FriendsListCollectionViewCell.FriendsListCollectionViewCell_ID, for: indexpath) as? FriendsListCollectionViewCell
-            return collectionView
+        collectionViewdataSource = collectionDiffableDataSource(collectionView: collectionView,
+                                                                cellProvider:
+                                                                    { (collectionView, indexpath, friendsDetails) -> UICollectionViewCell? in
+            let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: FriendsListCollectionViewCell.FriendsListCollectionViewCell_ID, for: indexpath) as? FriendsListCollectionViewCell
+            collectionViewCell?.friendDetails = friendsDetails
+            collectionViewCell?.updateCollectionCell()
+            return collectionViewCell
            
         })
     }
     
     func applyCollectionViewSnapshot(){
-        var snapShot = NSDiffableDataSourceSnapshot<String,MySpend>()
+        var snapShot = NSDiffableDataSourceSnapshot<String,FriendsList>()
         snapShot.appendSections(["0"])
-        snapShot.appendItems(mySpendDetails!, toSection: "0")
+        snapShot.appendItems(friendsDetails!, toSection: "0")
         collectionViewdataSource.apply(snapShot, animatingDifferences: true)
             
     }
