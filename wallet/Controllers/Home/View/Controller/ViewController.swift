@@ -83,35 +83,15 @@ class HomeViewController: UIViewController {
                 let isFirstCell = indexpath.row == 0
                 let isLastCell = indexpath.row == self.totalMySpendRowsCount - 1
 
-//                    if isFirstCell && isLastCell {
-////                        cell?.viewHolderView.topBottomRounded()
-//                        cell?.viewHolderView.layer.cornerRadius = 20
-//                        cell?.viewHolderView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-//                    } else
                     if isFirstCell {
-//                        cell?.viewHolderView.topRounded()
                         cell?.viewHolderView.layer.cornerRadius = 20
                         cell?.viewHolderView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-//                       
 
                     }
-//                    else
                 if isLastCell {
-//                        cell?.viewHolderView.bottomRounded()
                     cell?.viewHolderView.layer.cornerRadius = 20
                     cell?.viewHolderView.layer.maskedCorners = [.layerMaxXMaxYCorner,.layerMinXMaxYCorner]
-//                    cell?.viewHolderView.layer.shadowOpacity = 0.8
-//                    cell?.viewHolderView.layer.shadowOffset = CGSize(width: 0, height: 3)
-//                    cell?.viewHolderView.layer.shadowRadius = 4.0
-//
-//                    let shadowRect: CGRect =                         (cell?.viewHolderView.bounds.insetBy(dx: 0, dy: 4))!
-//                    cell?.viewHolderView.layer.shadowPath = UIBezierPath(rect: shadowRect).cgPath
-
                     }
-//                    else {
-//                        // THIS IS THE KEY THING
-//                        cell?.viewHolderView.defaultStateForBorders()
-//                    }
                 return cell
             default:
                 return UITableViewCell()
