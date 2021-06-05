@@ -29,5 +29,5 @@ struct FriendsList: Codable,Hashable {
 
 // MARK: - MySpend
 struct MySpend: Codable,Hashable {
-    let title, amount, time: String
+    let title, amount, icon, time: String //"2021-05-01T00:00:00.000Z"
 }

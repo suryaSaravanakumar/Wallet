@@ -24,7 +24,7 @@
 		D8403C60265A2D1D0078DF91 /* MySpendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8403C5F265A2D1D0078DF91 /* MySpendsViewController.swift */; };
 		D85CF8EE2650F03A002CC759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8ED2650F03A002CC759 /* AppDelegate.swift */; };
 		D85CF8F02650F03A002CC759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8EF2650F03A002CC759 /* SceneDelegate.swift */; };
-		D85CF8F22650F03A002CC759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8F12650F03A002CC759 /* ViewController.swift */; };
+		D85CF8F22650F03A002CC759 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CF8F12650F03A002CC759 /* HomeViewController.swift */; };
 		D85CF8F52650F03A002CC759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85CF8F32650F03A002CC759 /* Main.storyboard */; };
 		D85CF8F72650F03A002CC759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85CF8F62650F03A002CC759 /* Assets.xcassets */; };
 		D85CF8FA2650F03A002CC759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85CF8F82650F03A002CC759 /* LaunchScreen.storyboard */; };
@@ -71,7 +71,7 @@
 		D85CF8EA2650F03A002CC759 /* wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85CF8ED2650F03A002CC759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D85CF8EF2650F03A002CC759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D85CF8F12650F03A002CC759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D85CF8F12650F03A002CC759 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D85CF8F42650F03A002CC759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D85CF8F62650F03A002CC759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D85CF8F92650F03A002CC759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -318,7 +318,7 @@
 		D85CF9272650F0D4002CC759 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D85CF8F12650F03A002CC759 /* ViewController.swift */,
+				D85CF8F12650F03A002CC759 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -491,7 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D85CF92F2650F4A6002CC759 /* CurrentBalanceTableViewCell.swift in Sources */,
-				D85CF8F22650F03A002CC759 /* ViewController.swift in Sources */,
+				D85CF8F22650F03A002CC759 /* HomeViewController.swift in Sources */,
 				D8403C152657F9140078DF91 /* SendMoneyTabelCell.swift in Sources */,
 				D8403C60265A2D1D0078DF91 /* MySpendsViewController.swift in Sources */,
 				D85CF8EE2650F03A002CC759 /* AppDelegate.swift in Sources */,

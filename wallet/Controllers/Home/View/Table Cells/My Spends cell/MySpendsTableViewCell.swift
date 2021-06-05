@@ -24,6 +24,7 @@ class MySpendsTableViewCell: UITableViewCell {
     //MARK: - View Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.selectionStyle = .none
         spendIconHolderView.layer.cornerRadius = 20
         spendIconHolderView.layer.masksToBounds = false
         
@@ -41,6 +42,7 @@ class MySpendsTableViewCell: UITableViewCell {
         spendTitle.text = mySpend.title
         spendAmount.text = "₹ \(mySpend.amount)"
         spendDateAndTime.text = mySpend.time
+        spendIcon.image = UIImage(named: mySpend.icon)
     }
     
 }

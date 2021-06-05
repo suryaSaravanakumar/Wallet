@@ -18,7 +18,6 @@ func readLocalFileAndParseData() -> WalletModel? {
             return parsedData
         }
     } catch {
-        
         print(error)
     }
     

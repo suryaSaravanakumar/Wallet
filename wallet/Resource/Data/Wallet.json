@@ -27,18 +27,39 @@
   "mySpend": [
     {
       "title": "Movie Ticket",
+      "icon" : "movie",
       "amount": "1200",
-      "time": "2021-05-01T00:00:00.000Z"
+      "time": "2 Mins Ago"
     },
     {
       "title": "Electricity Bill",
+      "icon" : "bulb",
       "amount": "300",
-      "time": "2021-05-04T00:00:00.000Z"
+      "time": "1 Day Ago"
     },
     {
       "title": "Food and drinks",
+      "icon" : "food",
       "amount": "1000",
-      "time": "2021-04-30T00:00:00.000Z"
+      "time": "25 - 05 - 2021"
+    },
+    {
+      "title": "Movie Ticket",
+      "icon" : "movie",
+      "amount": "1320",
+      "time": "20 - 05 - 2021"
+    },
+    {
+      "title": "Food and drinks",
+      "icon" : "food",
+      "amount": "800",
+      "time": "20 - 05 - 2021"
+    },
+    {
+      "title": "Movie Ticket",
+      "icon" : "movie",
+      "amount": "300",
+      "time": "10 - 05 - 2021"
     }
   ]
 }

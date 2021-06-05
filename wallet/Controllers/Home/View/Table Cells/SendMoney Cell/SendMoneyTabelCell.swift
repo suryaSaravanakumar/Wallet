@@ -21,6 +21,7 @@ class SendMoneyTabelCell: UITableViewCell {
     
     override  func awakeFromNib() {
         super.awakeFromNib()
+        self.selectionStyle = .none
         addImageHolderView.layer.cornerRadius = 25
         addImageHolderView.layer.masksToBounds = false
         
