@@ -1,7 +1,8 @@
 # Wallet 
 A Simple app explaning the usage of Diffable Data source. I have used diffable datasource in UITableview and UICollectionView in this project.
 
-https://user-images.githubusercontent.com/74789441/120891929-f832c380-c628-11eb-983a-7044798cf97e.mov
+![Wallet](https://user-images.githubusercontent.com/74789441/120892361-890a9e80-c62b-11eb-80a8-59c2d96b135b.gif)
+
 
 ## What is Diffable DataSource ?
 A diffable data source provides the behavior you need to manage updates to your table- or collection view’s data and UI in a simple, efficient way. It replaces well-known methods like cellForRowAtIndexPath: and numberOfItemsInSection:
